@@ -1,2 +1,0 @@
-# Golearn
-Golang learning!
