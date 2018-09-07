@@ -39,3 +39,38 @@ func main() {
 	e.GET("/ws", hello)
 	e.Logger.Fatal(e.Start(":1323"))
 }
+
+
+//use this website to test: http://www.websocket.org/echo.html
+
+/**
+1. fill in the location: ws://127.0.0.1:1323/ws
+2. then click the connect, if connected, the console log will show that "CONNECTED"
+3. then send some message
+
+from the website console:
+```
+SENT: asdfasdf
+
+RECEIVED: Hello, Client!
+
+SENT: I am yihui
+
+RECEIVED: Hello, Client!
+```
+
+from the server terminal:
+```
+⇨ http server started on [::]:1323
+Rock it with HTML5 WebSocket
+Rock it with HTML5 WebSocket
+Rock it with HTML5 WebSocket
+Rock it with HTML5 WebSocket
+Rock it with HTML5 WebSocket
+Rock it with HTML5 WebSocket
+Rock it with HTML5 WebSocket
+Rock it with HTML5 WebSocket
+asdfasdf
+I am yihui
+```
+ */
