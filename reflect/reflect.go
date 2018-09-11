@@ -84,14 +84,9 @@ func main() {
 	paramList := []reflect.Value{reflect.ValueOf(10), reflect.ValueOf(20)}
 
 	retList := funcAdd.Call(paramList)
+	fmt.Println(retList)
 
 	for index, result := range retList {
 		fmt.Println(index, result)
 	}
-
-
-
-
-
-
 }
